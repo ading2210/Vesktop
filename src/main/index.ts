@@ -21,6 +21,8 @@ if (IS_DEV) {
     require("source-map-support").install();
 }
 
+autoUpdater.checkForUpdatesAndNotify();
+
 // Make the Vencord files use our DATA_DIR
 process.env.VENCORD_USER_DATA_DIR = DATA_DIR;
 
