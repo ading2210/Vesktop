@@ -23,8 +23,6 @@ export interface Settings {
     clickTrayToShowHide?: boolean;
     customTitleBar?: boolean;
 
-    checkUpdates?: boolean;
-
     splashTheming?: boolean;
     splashColor?: string;
     splashAnimationPath?: string;
@@ -39,7 +37,6 @@ export interface State {
     windowBounds?: Rectangle;
     displayid: int;
 
-    skippedUpdate?: string;
     firstLaunch?: boolean;
 
     steamOSLayoutVersion?: number;
