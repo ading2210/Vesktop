@@ -37,7 +37,8 @@ if (existsSync(LEGACY_DATA_DIR)) {
         console.error("Migration failed", e);
     }
 }
-app.setPath("sessionData", join(DATA_DIR, "sessionData"));
+const SESSION_DATA_DIR = join(DATA_DIR, "sessionData");
+app.setPath("sessionData", SESSION_DATA_DIR);
 
 export const VENCORD_SETTINGS_DIR = join(DATA_DIR, "settings");
 export const VENCORD_QUICKCSS_FILE = join(VENCORD_SETTINGS_DIR, "quickCss.css");
