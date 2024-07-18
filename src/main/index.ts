@@ -7,7 +7,7 @@
 import "./ipc";
 
 import { app, BrowserWindow, nativeTheme, net, protocol } from "electron";
-import { checkUpdates } from "updater/main";
+import { autoUpdater } from "electron-updater";
 
 import { DATA_DIR } from "./constants";
 import { createFirstLaunchTour } from "./firstLaunch";
