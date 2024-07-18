@@ -122,7 +122,9 @@ handle(IpcEvents.SELECT_VENCORD_DIR, async (_e, value?: null) => {
     const dir = res.filePaths[0];
     if (!isValidVencordInstall(dir)) return "invalid";
 
-    return dir;
+    State.store.vencordDir = dir;
+
+    return "ok";
 });
 
 handle(IpcEvents.SELECT_IMAGE_PATH, async () => {
